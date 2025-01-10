@@ -4,8 +4,28 @@
     {
         static void Main(string[] args)
         {
+            // Function needs made to calulate xp for lvl progression
+            /* Level XP     Total    
+            1 -> 2  200XP    200xp
+            2 -> 3  400XP    600xp
+            3 -> 4  600XP    1200XP
+            4 -> 5  800XP    2000XP
+            5 -> 6  1000XP   3000XP
+            6 -> 7  1200XP   4200XP
+            7 -> 8  1400XP   5600XP
+            8 -> 9  1600XP   7200XP
+            9 -> 10 1800XP   9000XP
+            if (xp >= 199)
+            {
+               lvl = 1;
+            }else if (xp >= 200 && xp <= 599 )
+            {
+                lvl = 2;
+            }
+            */
 
             double xp = 0;
+
             double lvl = 0;
             Console.WriteLine("This will track your XP as you move along this book.");
             Console.WriteLine();
@@ -15,17 +35,41 @@
             Console.WriteLine("50XP");
             Console.WriteLine();
 
+            
+
+            Console.WriteLine("This will track your XP as you move along this book.");
+            Console.WriteLine($"Your current exp is {xp} and your current level is {lvl}");
+            Console.WriteLine("");
+
+            Console.WriteLine("Knowledge Check #1");
+            Console.WriteLine("C#");
+            Console.WriteLine("25XP");
+            Console.WriteLine("");
+
+
             Console.Write("True / False. C# is a special-purpose language optimized for making web applications.");
             string knowledgeCheck1 = Console.ReadLine().ToUpper();
             if (knowledgeCheck1 == "FALSE")
+
+
             {
-               xp += 12.5;
+                xp += 12.5;
+                Console.WriteLine($"That is correct! You have gained 12.5 experience points.");
+            }else
+
+            {
+                Console.WriteLine($"That is wrong! The correct answer is FALSE. You gain 0 experience points.");
             }
             Console.Write("What is the name of the framework that C# runs on?");
             string knowledgeCheck2 = Console.ReadLine().ToUpper();
             if(knowledgeCheck2 == ".NET")
             {
                 xp += 12.5;
+                Console.WriteLine($"That is correct! You have gained 12.5 experience points.");
+            }
+            else
+            {
+                Console.WriteLine($"That is wrong! The correct answer is .NET. You gain 0 experience points.");
             }
 
             Console.WriteLine();
