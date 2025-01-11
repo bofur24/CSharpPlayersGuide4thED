@@ -6,7 +6,7 @@
         {
 
             double xp = 0;
-            double lvl = 0;
+            double lvl = 1;
             Console.WriteLine("This will track your XP as you move along this book.");
             Console.WriteLine();
 
@@ -249,6 +249,83 @@
             Console.WriteLine();
             Console.WriteLine($"Your current experience points are {xp} and your current level is {lvl}");
             Console.WriteLine();
+
+            Console.WriteLine("Knowledge Check");
+            Console.WriteLine("Variables");
+            Console.WriteLine("25XP");
+
+            Console.WriteLine();
+            Console.WriteLine("Check your knowledge with the following questions:");
+            // Answer Name Type Value
+            Console.WriteLine("1. Name the three things all variables have.");
+            Console.Write("First thing: ");
+            string knowledgeCheck2_1 = Console.ReadLine().ToUpper();
+            Console.Write("Second thing: ");
+            string knowledgeCheck2_2 = Console.ReadLine().ToUpper();
+            Console.Write("Third thing: ");
+            string knowledgeCheck2_3 = Console.ReadLine().ToUpper();
+            if (knowledgeCheck2_1 == "Name" || knowledgeCheck2_2 == "Type" || knowledgeCheck2_3 == "Value")
+            {
+                bool answer1_1 = true;
+                if (knowledgeCheck2_1 == "Name" || knowledgeCheck2_2 == "Type" || knowledgeCheck2_3 == "Value")
+                {
+                    bool answer1_2 = true;
+                    if (knowledgeCheck2_1 == "Name" || knowledgeCheck2_2 == "Type" || knowledgeCheck2_3 == "Value")
+                    {
+                        bool answer1_3 = true;
+                        if (answer1_1 == true && answer1_2 == true && answer1_3 == true)
+                        {
+                            xp += 6.25;
+                            Console.WriteLine($"That is correct! You have gained 6.25 experience points.");
+
+                        }
+                    }
+                } else
+                {
+                    Console.WriteLine($"That is wrong! You gain 0 experience points.");
+                }
+
+
+            }
+
+            Console.WriteLine();
+            Console.WriteLine($"Your current experience points are {xp} and your current level is {lvl}");
+            Console.WriteLine();
+
+            
+            Console.Write("True/False: Variables must always be declared before being used. ");
+            // True
+            string knowledgeCheck2_4 = Console.ReadLine().ToUpper();
+            if(knowledgeCheck2_4 == "TRUE")
+            {
+                xp += 6.25;
+                Console.WriteLine($"That is correct! You have gained 6.25 experience points.");
+            }else
+            {
+                Console.WriteLine($"That is wrong! You gain 0 experience points.");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine($"Your current experience points are {xp} and your current level is {lvl}");
+            Console.WriteLine();
+
+            Console.Write("Can you redeclare a variable? (YES or NO) ");
+            string knowledgeCheck2_5 = Console.ReadLine().ToUpper();
+            if (knowledgeCheck2_5 == "NO")
+            {
+                xp += 6.25;
+                Console.WriteLine($"That is correct! You have gained 6.25 experience points.");
+            }
+            else
+            {
+                Console.WriteLine($"That is wrong! You gain 0 experience points.");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine($"Your current experience points are {xp} and your current level is {lvl}");
+            Console.WriteLine();
+
+            Console.WriteLine("Wich of the following are legal C# variable names? answer, 1stValue, value1, $message, delete-me, delete_me, PI");
 
 
 
