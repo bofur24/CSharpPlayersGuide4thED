@@ -25,8 +25,8 @@
             */
 
             double xp = 0;
-
-            double lvl = 0;
+            double lvl = 1;
+            
             Console.WriteLine("This will track your XP as you move along this book.");
             Console.WriteLine();
 
