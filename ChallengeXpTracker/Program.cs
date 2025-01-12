@@ -25,12 +25,8 @@
             */
 
             double xp = 0;
-<<<<<<< HEAD
             double lvl = 1;
-=======
 
-            double lvl = 0;
->>>>>>> d040abfaaec14a7af7a613255f61f072126dd602
             Console.WriteLine("This will track your XP as you move along this book.");
             Console.WriteLine();
 
