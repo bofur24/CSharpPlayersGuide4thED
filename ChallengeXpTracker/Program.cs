@@ -25,8 +25,8 @@
             */
 
             double xp = 0;
-            double lvl = 1;
 
+            double lvl = 0;
             Console.WriteLine("This will track your XP as you move along this book.");
             Console.WriteLine();
 
@@ -65,7 +65,6 @@
             if(knowledgeCheck2 == ".NET")
             {
                 xp += 12.5;
-                Console.WriteLine($"That is correct! You have gained 12.5 experience points.");
             }
             else
             {
