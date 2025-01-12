@@ -26,7 +26,7 @@
 
             double xp = 0;
             double lvl = 1;
-            
+
             Console.WriteLine("This will track your XP as you move along this book.");
             Console.WriteLine();
 
@@ -368,7 +368,7 @@
             Console.WriteLine($"Your current experience points are {xp} and your current level is {lvl}");
             Console.WriteLine();
 
-            Console.WriteLine("Wich of the following are legal C# variable names? answer, 1stValue, value1, $message, delete-me, delete_me, PI");
+            Console.WriteLine("Wich of the following are legal C# variable names? answer, 1stValue, value1, $message, delete-me, delete_me, PI ");
             Console.WriteLine();
 
 
