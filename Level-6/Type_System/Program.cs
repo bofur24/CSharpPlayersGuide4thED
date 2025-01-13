@@ -41,6 +41,52 @@
             aVeryBigNumber = 13;
             Console.WriteLine($"THis is a VeryBigNumber {aVeryBigNumber}");
 
+            byte aNumberA = 32;
+            long aVeryBigNumberA = 10000000000; // 10 billion would be a 'long' literal.
+            ulong aVeryBigNumberB = 1000000000U; // U signifies that it is unsigned and must be either uint or ulong
+            aVeryBigNumberB = 10000000000L; // L indicates that the literal must be a long or a ulong
+            aVeryBigNumberB = 10000000000UL; // UL indicates that it must be a ulong
+
+            Console.WriteLine();
+            Console.WriteLine("The Digit Separator");
+            int bigNumber = 1_000_000_000;
+            Console.WriteLine(bigNumber);
+            int a = 123_456_789;
+            int b = 12_34_56_78_9;
+            int c = 1_2__3___4____5;
+
+            Console.WriteLine($"Digit Separator with Underscore {a}, {b}, {c}.");
+            Console.WriteLine();
+
+            Console.WriteLine("Choosing Between the Interger Types");
+            Console.WriteLine("The more common strategy is to use int, uint, long or ulong as necessary.");
+            Console.WriteLine("Only use byte, sbyte, short and ushort when there is a clear and significant benefit.");
+            Console.WriteLine();
+
+            Console.WriteLine("Binary and Hexadecimal Literals");
+            Console.WriteLine("To write a binary literal, start your number with a 0b. For example:");
+            int thirteen = 0b00001101;
+            Console.WriteLine($"{thirteen} is 0b00001101");
+            Console.WriteLine("For a hexadecimal literal, you start your number with 0x:");
+            int theColorMagenta = 0xFF00FF;
+            Console.WriteLine($"{theColorMagenta} is 0xFF00FF");
+            Console.WriteLine();
+
+            Console.WriteLine("Text: Characters and Strings");
+            Console.WriteLine("A char literal is made by placing the character in single quotes:");
+            char aLetter = 'a';
+            Console.WriteLine($"This is a char {aLetter}");
+            Console.WriteLine("If you know the hexadecimal Unicode number for a symbol and would prefer to use that, you can write that out after a \\u:");
+            char aLettera = '\u0061'; // An 'a'
+            Console.WriteLine($"\\u0061 is an {aLettera}");
+            Console.WriteLine("A string literal is made by placing the desired text in double quotes:");
+            string message = "Hello, World!";
+            Console.WriteLine($"string mesage = \"{message}\"");
+
+
+
+
+
         }
     }
 }
