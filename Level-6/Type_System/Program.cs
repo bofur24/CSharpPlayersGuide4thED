@@ -82,6 +82,69 @@
             Console.WriteLine("A string literal is made by placing the desired text in double quotes:");
             string message = "Hello, World!";
             Console.WriteLine($"string mesage = \"{message}\"");
+            Console.WriteLine();
+
+            Console.WriteLine("Floating-Point Types");
+            Console.WriteLine("Type\t\tByte\t\tDigits of Precision\t\tHardware Supported");
+            Console.WriteLine("float\t\t4\t\t7\t\t\t\tYes");
+            Console.WriteLine("double\t\t8\t\t15-16\t\t\t\tYes");
+            Console.WriteLine("decimal\t\t16\t\t28-29\t\t\t\tNo");
+            Console.WriteLine();
+            double number1 = 3.5623;
+            float number2 = 3.5623f;
+            decimal number3 = 3.5623m;
+            Console.WriteLine($"This is a double {number1}, this is a float {number2}, this is a decimal {number3}");
+            Console.WriteLine();
+            Console.WriteLine("Side Quest: Scientific Notation");
+            double avogadrosNumber = 6.022e23;
+            Console.WriteLine($"This is Avogadro's Number: {avogadrosNumber}");
+            Console.WriteLine();
+            Console.WriteLine("The Bool Type");
+            Console.WriteLine("Bool has two options true and false");
+            bool itWorked = true;
+            bool itFailed = false;
+            Console.WriteLine($"It worked = {itWorked}, it failed = {itFailed}");
+            Console.WriteLine();
+
+            Console.WriteLine("Challenge");
+            Console.WriteLine("The Variable Shop");
+            Console.WriteLine("100XP");
+            Console.WriteLine();
+            Console.WriteLine("You see an old shopkeeper struggling to stack up variables in a window display.");
+            Console.WriteLine("\"Hoo-wee! All these variable types sure are exciting but seeting them all up to show them off to excited new programmers like yourself is a lot of work for these aching bones,\" she says.");
+            Console.WriteLine("\"You wouldn't mind helping me set up this program with one variable of every type, would you?\"");
+            Console.WriteLine();
+            Console.WriteLine("Objectives:");
+            Console.WriteLine("-Build a program with a variable of all fourteen types described in this level.");
+            Console.WriteLine("-Assign each of them a value using a literal of the correct type.");
+            Console.WriteLine("-Use Console.WriteLine to display the contents of each variable.");
+            Console.WriteLine();
+
+            byte byteType= 255;
+            short shortType = 32_767;
+            int intType = 2_147_483_647;
+            long longType = 9_223_372_036_854_775_807;
+            sbyte sbyteType = 127;
+            ushort ushortType = 65_535;
+            uint uintType = 4_294_967_295;
+            ulong ulongType = 18_446_744_073_709_551_615;
+            char charType = 'a';
+            string stringType = "Hello World!";
+            float floatType = 3.562f;
+            double doubleType = 3.56231;
+            decimal decimalType = 3.456789m;
+            bool boolType = true;
+
+            Console.WriteLine($" 1. byteType = {byteType}\n 2. shortType = {shortType}\n 3. intType = {intType}\n 4. longtype = {longType}\n 5. sbyteType = {sbyteType}\n 6. ushortType = {ushortType}\n " +
+                $"7. uintType = {uintType}\n 8. ulongType = {ulongType}\n 9. charType = {charType}\n 10. stringType = {stringType}\n 11. floatType = {floatType}\n 12. doubleType = {doubleType}\n " +
+                $"13. decimalType = {decimalType}\n 14. boolType = {boolType}.");
+
+               
+
+
+
+
+
 
 
 
