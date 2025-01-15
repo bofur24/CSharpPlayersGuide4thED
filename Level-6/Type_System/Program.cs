@@ -138,8 +138,74 @@
             Console.WriteLine($" 1. byteType = {byteType}\n 2. shortType = {shortType}\n 3. intType = {intType}\n 4. longtype = {longType}\n 5. sbyteType = {sbyteType}\n 6. ushortType = {ushortType}\n " +
                 $"7. uintType = {uintType}\n 8. ulongType = {ulongType}\n 9. charType = {charType}\n 10. stringType = {stringType}\n 11. floatType = {floatType}\n 12. doubleType = {doubleType}\n " +
                 $"13. decimalType = {decimalType}\n 14. boolType = {boolType}.");
+            Console.WriteLine();
 
-               
+            Console.WriteLine("Challenge");
+            Console.WriteLine("The Variable Shop Returns");
+            Console.WriteLine("50XP");
+            Console.WriteLine();
+
+            Console.WriteLine("\"Hey! Programmer!\" It's the shopkeeper from the Variable Shop who hobbles over to you.");
+            Console.WriteLine("\"Thanks to your help, variables are selling like RAM cakes! But these people just aren't any good at programming. " +
+                "They keep asking how to modify the values of the variables they're buying, and... well... frankly, I have no clue. But you're a programmer, right? " +
+                "Maybe you could show me so I can show my customers?\"");
+            Console.WriteLine();
+
+            Console.WriteLine("Objectives:");
+            Console.WriteLine("-Modify your Variable Shop program to assign a new, different literal value to each of the 14 original variables. Do not declare any additional variables.");
+            Console.WriteLine("-Use Console.WriteLine to display the updated contents of each variable.");
+
+            byteType = 254;
+            shortType = 32_766;
+            intType = 2_147_483_646;
+            longType = 9_223_372_036_854_775_806;
+            sbyteType = 126;
+            ushortType = 65_534;
+            uintType = 4_294_967_294;
+            ulongType = 18_446_744_073_709_551_614;
+            charType = 'b';
+            stringType = "My name is";
+            floatType = 3.561f;
+            doubleType = 3.56230;
+            decimalType = 3.456788m;
+            boolType = false;
+
+            Console.WriteLine();
+            Console.WriteLine($" 1. byteType = {byteType}\n 2. shortType = {shortType}\n 3. intType = {intType}\n 4. longtype = {longType}\n 5. sbyteType = {sbyteType}\n 6. ushortType = {ushortType}\n " +
+                $"7. uintType = {uintType}\n 8. ulongType = {ulongType}\n 9. charType = {charType}\n 10. stringType = {stringType}\n 11. floatType = {floatType}\n 12. doubleType = {doubleType}\n " +
+                $"13. decimalType = {decimalType}\n 14. boolType = {boolType}.");
+            Console.WriteLine();
+
+            Console.WriteLine("Type Inference");
+
+            var varMessage = "Hello, World!";
+            // var x; DOES NOT COMPILE!
+            Console.WriteLine($"This is a Type Inference using Var varMessage = {varMessage}");
+
+            var something = "Hello";
+            // something = 3; ERROR. Cannot store an int in a string-typed variable.
+
+            Console.WriteLine();
+
+            Console.WriteLine("The Convert Class and the Parse Methods");
+            Console.WriteLine("What is your favorite number?");
+            string favoriteNumberText = Console.ReadLine();
+            int favoriteNumber = Convert.ToInt32(favoriteNumberText);
+            Console.WriteLine($"My favorite number is {favoriteNumber}");
+            Console.WriteLine();
+
+            Console.WriteLine("Method Name\t\tTarget Type\t\t\tMethod Name\t\tTarget Type");
+            Console.WriteLine("ToByte\t\t\tbyte\t\t\t\tToSByte\t\t\tsbyte");
+            Console.WriteLine("ToInt16\t\t\tshort\t\t\t\tToUInt16\t\tushort");
+            Console.WriteLine("ToInt32\t\t\tint\t\t\t\tToUInt32\t\tuint");
+            Console.WriteLine("ToInt64\t\t\tlong\t\t\t\tToUInt64\t\tulong");
+            Console.WriteLine("ToChar\t\t\tchar\t\t\t\tToString\t\tstring");
+            Console.WriteLine("ToSingle\t\tfloat\t\t\t\tToDouble\t\tdouble");
+            Console.WriteLine("ToDecimal\t\tdecimal\t\t\t\tToBoolean\t\tbool");
+            Console.WriteLine();
+
+            Console.WriteLine("Parse Methods");
+
 
 
 
