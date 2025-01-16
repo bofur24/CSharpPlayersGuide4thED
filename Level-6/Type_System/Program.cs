@@ -205,6 +205,25 @@
             Console.WriteLine();
 
             Console.WriteLine("Parse Methods");
+            int number = int.Parse("9000");
+            Console.WriteLine($"This is a string parsed to an int {number}");
+            Console.WriteLine();
+
+            Console.WriteLine("Knowledge Check");
+            Console.WriteLine("Type System");
+            Console.WriteLine("25XP");
+            Console.WriteLine();
+
+            Console.WriteLine("1. True/False. The int type can store any possible integer."); // False
+            Console.WriteLine("2. Order the following by how large their range is, from smallest to largest: "); // byte, short, int, long
+            Console.WriteLine("3. True/False. The byte type is signed."); // False
+            Console.WriteLine("4. Which can store higher numbers, int or uint?"); // uint
+            Console.WriteLine("5. What three types can store floating-point number?"); // float, double, decimal
+            Console.WriteLine("6. Which of the options in question 5 can hold the largest numbers?"); // double
+            Console.WriteLine("7. Which of the options in question 5 is the most precise?"); // decimal
+            Console.WriteLine("8. What type does the literal value \"8\" (including the quotes) have?"); // string
+            Console.WriteLine("9. What type stores true and false values?"); // bool
+
 
 
 
